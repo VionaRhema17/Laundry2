@@ -83,14 +83,20 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:gravity="center">/>
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/Pelanggan" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Transaksi"
                         android:layout_marginEnd="5dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="20dp"
                         android:textSize="17sp"/>
                 </LinearLayout>
 
@@ -100,12 +106,14 @@
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center">
+
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pelanggan"
                         android:layout_marginEnd="5dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="20dp"
                         android:textSize="17sp"/>
                 </LinearLayout>
 
