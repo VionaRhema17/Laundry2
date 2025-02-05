@@ -7,6 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".Pelanggan.DataPelangganActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDataPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/cardview_datapelanggan" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/datapengguna_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/plus_1828575" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

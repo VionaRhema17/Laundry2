@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Laundry2"
         tools:targetApi="31">
         <activity
+            android:name=".Layanan.LayananActivity"
+            android:exported="false" />
+        <activity
             android:name=".Pegawai.TambahPegawaiActivity"
             android:exported="false" />
         <activity
@@ -23,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".Pelanggan.TambahPelangganActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Layanan.LayananActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

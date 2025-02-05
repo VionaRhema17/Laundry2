@@ -5,33 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2DCEF"
     tools:context=".Layanan.LayananActivity">
 
     <ImageView
-        android:id="@+id/imageLogo"
+        android:id="@+id/ivMesinCuci"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/mesincuci"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textTitle"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="Logo Laundry" />
+        android:src="@drawable/mesincuci" />
 
     <TextView
-        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Layanan"
-        android:layout_marginStart="5dp"
-        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/imageLogo"
-        app:layout_constraintBottom_toBottomOf="@id/imageLogo"
-        app:layout_constraintStart_toEndOf="@id/imageLogo" />
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="60dp"/>
 
     <!-- Pilih Layanan Laundry -->
     <TextView
@@ -42,7 +37,7 @@
         android:textSize="18sp"
         android:layout_marginStart="21dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        app:layout_constraintTop_toBottomOf="@id/ivMesinCuci"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp" />
 
@@ -155,5 +150,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

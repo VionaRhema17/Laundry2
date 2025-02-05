@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Laundry2</string>
+    <string name="tvSalam">Selamat Pagi, Viona</string>
+    <string name="tvTanggal">08 Januari 2025</string>
+    <string name="tvEstimasi">Estimasi Hari Ini</string>
 </resources>

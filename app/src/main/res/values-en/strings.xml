@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Laundry2</string>
+    <string name="tvSalam">Good Morning, Viona</string>
+    <string name="tvTanggal">08 January 2025</string>
+    <string name="tvEstimasi">Today\'s Estimates</string>
 </resources>
