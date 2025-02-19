@@ -4,4 +4,26 @@
     <string name="tvSalam">Good Morning, Viona</string>
     <string name="tvTanggal">08 January 2025</string>
     <string name="tvEstimasi">Today\'s Estimates</string>
+    <string name="tvTransaksi">Transaction</string>
+    <string name="tvPelanggan">Customer</string>
+    <string name="tvLaporan">Report</string>
+    <string name="tvAkun">Account</string>
+    <string name="tvLayanan2">Service</string>
+    <string name="tvTambahan">Addition</string>
+    <string name="tvPegawai">Employee</string>
+    <string name="tvCabang">Branch</string>
+    <string name="tvPrinter">Printers</string>
+    <string name="tvServis">Ready to serve customers sincerely</string>
+    <string name="tvServis2">Don\'t disappoint customers</string>
+    <string name="tvTambahPegawai">Add Employee</string>
+    <string name="tvNamaLengkap">Full name</string>
+    <string name="inputNamaLengkap">Full Name</string>
+    <string name="tvAlamat">Address</string>
+    <string name="inputAlamat">Address</string>
+    <string name="validasi_etNama">Name Cannot Be Blank</string>
+    <string name="validasi_etAlamat">Address Cannot Be Blank</string>
+    <string name="validasi_etNoHP">HP number must not be empty</string>
+    <string name="validasi_etCabang">Branches Cannot Be Empty</string>
+    <string name="sukses_simpan_pelanggan">Success Save Customers</string>
+    <string name="gagal_simpan_pelanggan">Failed to save customers</string>
 </resources>

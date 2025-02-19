@@ -8,7 +8,7 @@
     tools:context=".Pelanggan.TambahPelangganActivity">
 
     <TextView
-        android:id="@+id/tvTambahPelanggan"
+        android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tambah Pelanggan"
@@ -25,15 +25,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nama Lengkap"
-        app:layout_constraintTop_toBottomOf="@+id/tvTambahPelanggan"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul"
         android:textSize="23sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="30sp"
         android:layout_marginTop="20dp"/>
 
-    <EditText
-        android:id="@+id/inputNamaLengkap"
+     <EditText
+        android:id="@+id/etNamaLengkap"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:hint="Nama Lengkap"
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Alamat"
-        app:layout_constraintTop_toBottomOf="@+id/inputNamaLengkap"
+        app:layout_constraintTop_toBottomOf="@+id/etNamaLengkap"
         android:textSize="23sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
         android:layout_marginStart="30sp" />
 
     <EditText
-        android:id="@+id/inputAlamat"
+        android:id="@+id/etAlamat"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:hint="Alamat"
@@ -73,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No HP Aktif"
-        app:layout_constraintTop_toBottomOf="@+id/inputAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
         android:layout_marginStart="30sp" />
 
     <EditText
-        android:id="@+id/inputNoHP"
+        android:id="@+id/etNoHP"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:hint="No HP Aktif"
@@ -96,8 +96,8 @@
         android:id="@+id/tvCabang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alamat"
-        app:layout_constraintTop_toBottomOf="@+id/inputNoHP"
+        android:text="Cabang"
+        app:layout_constraintTop_toBottomOf="@+id/etNoHP"
         android:textSize="23sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,10 +105,10 @@
         android:layout_marginStart="30sp" />
 
     <EditText
-        android:id="@+id/inputCabang"
+        android:id="@+id/etCabang"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:hint="Alamat"
+        android:hint="Cabang"
         android:padding="12dp"
         android:background="@drawable/radius"
         app:layout_constraintTop_toBottomOf="@id/tvCabang"
@@ -117,13 +117,14 @@
         android:layout_marginTop="24dp"/>
 
     <Button
+        android:id="@+id/btSimpan_TambahPelanggan"
         android:layout_width="350dp"
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Simpan"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputCabang"
+        app:layout_constraintTop_toBottomOf="@id/etCabang"
         android:layout_marginTop="25dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -105,7 +105,7 @@
                         android:id="@+id/tvTransaksi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Transaksi"
+                        android:text="@string/tvTransaksi"
                         android:layout_marginTop="10dp"
                         android:layout_marginStart="3dp"
                         android:textSize="17sp"/>
@@ -130,7 +130,7 @@
                         android:id="@+id/tvPelanggan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pelanggan"
+                        android:text="@string/tvPelanggan"
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="3dp"
                         android:textSize="17sp"/>
@@ -156,7 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Laporan"
+                        android:text="@string/tvLaporan"
                         android:textSize="17sp"/>
                 </LinearLayout>
 
@@ -168,7 +168,7 @@
         android:id="@+id/tvServis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Siap melayani pelanggan dengan setulus\nhati"
+        android:text="@string/tvServis"
         app:layout_constraintTop_toBottomOf="@+id/cvEstimasi"
         android:layout_marginTop="10dp"
         android:textSize="18dp"
@@ -181,7 +181,7 @@
         android:id="@+id/tvServis2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jangan Kecewakan Pelanggan"
+        android:text="@string/tvServis2"
         app:layout_constraintTop_toBottomOf="@+id/tvServis"
         android:textSize="16dp"
         android:layout_marginStart="27dp"/>
@@ -226,7 +226,7 @@
                         android:id="@+id/tvAkun"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Akun"
+                        android:text="@string/tvAkun"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textSize="16sp"
@@ -266,7 +266,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:text="Layanan"
+                        android:text="@string/tvLayanan2"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -301,7 +301,7 @@
                         android:id="@+id/tvTambahan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tambahan"
+                        android:text="@string/tvTambahan"
                         android:gravity="center"
                         android:textSize="16sp"
                         android:layout_marginTop="5dp"
@@ -347,7 +347,7 @@
                         android:id="@+id/tvPegawai"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pegawai"
+                        android:text="@string/tvPegawai"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:textSize="16sp"
@@ -385,7 +385,7 @@
                         android:id="@+id/tvCabang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cabang"
+                        android:text="@string/tvCabang"
                         android:gravity="center"
                         android:textSize="16sp"
                         android:layout_marginTop="5dp"
@@ -422,7 +422,7 @@
                         android:id="@+id/tvPrinter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Printer"
+                        android:text="@string/tvPrinter"
                         android:gravity="center"
                         android:textSize="16sp"
                         android:layout_marginTop="5dp"

@@ -4,6 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewParent
+import android.widget.Button
+import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.viona.laundry2.R
@@ -23,6 +26,20 @@ class DataPelangganAdapter (
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
        val item = listPelanggan[position]
+        holder.tvIdPelanggan.text = item.idPelanggan ?: "Tidak ada ID"
+        holder.NamaPelanggan.text = item.namaPelanggan
+        holder.tvAlamat.text = item.alamatPelanggan
+        holder.tvNoHP.text = item.noHPPelanggan
+        holder.tvTerdaftar.text = item.terdaftar
+
+        holder.cvCARD.setOnClickListener {
+
+        }
+        holder.btHubungi.setOnClickListener {
+
+        }
+        holder.btLihat.setOnClickListener {
+        }
 
     }
 
@@ -31,12 +48,14 @@ class DataPelangganAdapter (
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val cvCARD = itemView.findViewById<View>(R.id.cvDataPelanggan)
-        val tvID = itemView.findViewById<View>(R.id.cvTextIdPelanggan)
-        val tvNama = itemView.findViewById<View>(R.id.NamaPelanggan)
-        val tvNoHP = itemView.findViewById<View>(R.id.tvNoHP)
-        val tvTerdaftar = itemView.findViewById<View>(R.id.tvTerdaftar)
-        val tvAlamat = itemView.findViewById<View>(R.id.tvAlamat)
+        val cvCARD = itemView.findViewById<CardView>(R.id.cvDataPelanggan)
+        val tvIdPelanggan = itemView.findViewById<TextView>(R.id.tvIdPelanggan)
+        val NamaPelanggan = itemView.findViewById<TextView>(R.id.NamaPelanggan)
+        val tvNoHP = itemView.findViewById<TextView>(R.id.tvNoHP)
+        val tvTerdaftar = itemView.findViewById<TextView>(R.id.tvTerdaftar)
+        val tvAlamat = itemView.findViewById<TextView>(R.id.tvAlamat)
+        val btHubungi = itemView.findViewById<Button>(R.id.btHubungi)
+        val btLihat = itemView.findViewById<Button>(R.id.btLihat)
     }
 
 }

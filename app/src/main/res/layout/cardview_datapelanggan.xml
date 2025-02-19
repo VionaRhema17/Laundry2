@@ -10,12 +10,6 @@
     android:background="#D2DCEF"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvTextIdPelanggan"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:backgroundTint="#A9CEF4">
-
         <TextView
             android:id="@+id/tvIdPelanggan"
             android:layout_width="match_parent"
@@ -23,10 +17,9 @@
             android:text="ID PELANGGAN"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"/>
-
-    </androidx.cardview.widget.CardView>
+            android:background="#A9CEF4"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"/>
 
     <TextView
         android:id="@+id/NamaPelanggan"
