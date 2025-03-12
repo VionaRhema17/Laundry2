@@ -3,12 +3,10 @@ package com.viona.laundry2.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewParent
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.viona.laundry2.R
 import com.viona.laundry2.modeldata.ModelPelanggan
 

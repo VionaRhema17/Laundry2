@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Laundry2</string>
-    <string name="tvSalam">Selamat Pagi, Viona</string>
-    <string name="tvTanggal">08 Januari 2025</string>
+    <string name="salam_malam">Selamat Malam, Viona!</string>
     <string name="tvEstimasi">Estimasi Hari Ini</string>
     <string name="tvTransaksi">Transaksi</string>
     <string name="tvPelanggan">Pelanggan</string>
@@ -26,4 +25,8 @@
     <string name="validasi_etCabang">Cabang Tidak Boleh Kosong</string>
     <string name="sukses_simpan_pelanggan">Sukses Simpa Pelanggan</string>
     <string name="gagal_simpan_pelanggan">Gagal simpan pelangan</string>
+    <string name="salam_pagi">Selamat Pagi, Viona</string>
+    <string name="salam_siang">Selamat Siang, Viona!</string>
+    <string name="sukses_simpan_pegawai">Sukses simpan pelanggan</string>
+    <string name="gagal_simpan_pegawai">Gagal simpan pegawai</string>
 </resources>
