@@ -1,6 +1,6 @@
 package com.viona.laundry2.adapter
 
-import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -10,17 +10,16 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.core.Context
+import com.google.firebase.database.FirebaseDatabase
 import com.viona.laundry2.Pegawai.TambahPegawaiActivity
 import com.viona.laundry2.R
 import com.viona.laundry2.modeldata.ModelPegawai
-import java.lang.ref.Reference
 
 class DataPegawaiAdapter (
-    private val listPegawai: ArrayList<ModelPegawai>) : RecyclerView.Adapter<DataPegawaiAdapter.ViewHolder>() {
-        @SuppressLint("RestrictedApi")
-        lateinit var appContext: Context
-        lateinit var databaseReference: DatabaseReference
+    private val listPegawai: List<ModelPegawai>) : RecyclerView.Adapter<DataPegawaiAdapter.ViewHolder>() {
+    lateinit var appContext: Context
+    lateinit var databaseReference: DatabaseReference
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -28,6 +27,7 @@ class DataPegawaiAdapter (
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.cardview_datapegawai, parent, false)
         appContext = parent.context
+        databaseReference = FirebaseDatabase.getInstance().getReference("pegawai")
         return ViewHolder(view)
     }
 
@@ -57,10 +57,6 @@ class DataPegawaiAdapter (
 
     }
 
-    override fun getItemCount(): Int {
-        return listPegawai.size
-    }
-
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val cvDataPegawai = itemView.findViewById<CardView>(R.id.cvDataPegawai)
         val tvIdPegawai = itemView.findViewById<TextView>(R.id.tvIdPegawai)
@@ -71,5 +67,7 @@ class DataPegawaiAdapter (
         val btHubungiPegawai = itemView.findViewById<Button>(R.id.btHubungiPegawai)
         val btLihatPegawai = itemView.findViewById<Button>(R.id.btLihatPegawai)
     }
-
+    override fun getItemCount(): Int {
+        return listPegawai.size
+    }
 }

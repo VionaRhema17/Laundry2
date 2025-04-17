@@ -48,7 +48,7 @@ class DataPegawaiActivity : AppCompatActivity() {
             intent.putExtra("idPegawai", "")
             intent.putExtra("namaPegawai", "")
             intent.putExtra("alamatPegawai", "")
-            intent.putExtra("")
+            intent.putExtra("cabangPegawai", "")
             startActivity(intent)
         }
 
